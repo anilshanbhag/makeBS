@@ -41,7 +41,6 @@ function Navbar() {
 		}
 		i--;
 	}
-	probNav.css('background-color','red');
 	if(probNav.length==0)
 		console.log("nothing in it");
 	else{
@@ -50,7 +49,7 @@ function Navbar() {
 		'navbar-margin-bottom': probNav.css('margin-bottom'),
 		'navbar-default-color':            probNav.css('color'),
 		'navbar-default-bg':                probNav.css('background-color'),
-		'navbar-default-link-color':        probNav.find('a').css('color')
+		'navbar-default-link-color':        probNav.find('ul li a:first').css('color')
 	};
 	}
 	return -1;
