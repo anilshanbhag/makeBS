@@ -5,9 +5,13 @@ var page = require('webpage').create(),
 phantom.injectJs('./typography.js');
 phantom.injectJs('./footer.js');
 phantom.injectJs('./textblock.js');
-phantom.injectJs('./navbar.js');
+//phantom.injectJs('./navbar.js');
+phantom.injectJs('./widgetifier.js');
 
-var handlers = [ Typography, Footer, TextBlock, Navbar ];
+var handlers = [ Typography, Footer, TextBlock,textWidgetifier ]
+
+
+
 
 page.onConsoleMessage = function(msg) {
     console.log(msg);
