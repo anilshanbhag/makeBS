@@ -10,9 +10,6 @@ phantom.injectJs('./widgetifier.js');
 
 var handlers = [ Typography, Footer, TextBlock,textWidgetifier ]
 
-
-
-
 page.onConsoleMessage = function(msg) {
     console.log(msg);
 };
